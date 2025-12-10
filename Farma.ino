@@ -44,7 +44,18 @@ enum EstadoSistema {
 
 EstadoSistema estadoAtual = ESPERANDO_CPF;
 
-const String CPF_CORRETO = "12345678912";
+// ========== LISTA DE CPFs AUTORIZADOS ==========
+const int QTD_CPFS = 7;  // Altere este número conforme necessário
+const String CPFS_AUTORIZADOS[QTD_CPFS] = {
+  "12345678912",
+  "08981397406",
+  "13315566437",
+  "98765432109",
+  "11122233344",
+  "07712603006",
+  "83909222072"
+};
+
 const byte TAMANHO_MAX_CPF = 11;
 String cpfDigitado = "";
 
@@ -52,7 +63,17 @@ const unsigned long tempoTampaAbertaMs   = 2000;
 const unsigned long tempoSemLeituraMaxMs = 45000;
 unsigned long momentoUltimaLeitura = 0;
 
- void mostrarTelaCPF() {
+// Função para verificar se o CPF está na lista
+bool cpfEstaAutorizado(String cpf) {
+  for (int i = 0; i < QTD_CPFS; i++) {
+    if (cpf == CPFS_AUTORIZADOS[i]) {
+      return true;
+    }
+  }
+  return false;
+}
+
+void mostrarTelaCPF() {
   tela.clear();
   tela.setCursor(0, 0);
   tela.print("Digite seu CPF");
@@ -93,7 +114,8 @@ void processarTecladoCPF() {
       return;
     }
 
-    if (cpfDigitado == CPF_CORRETO) {
+    // Verifica se o CPF está na lista de autorizados
+    if (cpfEstaAutorizado(cpfDigitado)) {
       tela.clear();
       tela.setCursor(0, 0);
       tela.print("CPF correto :)");
@@ -129,8 +151,6 @@ void processarTecladoCPF() {
     }
   }
 }
-
-
 
 void processarLeitor() {
   unsigned long agora = millis();
@@ -170,9 +190,9 @@ void processarLeitor() {
       tela.print("Desconto de 15%");
       tela.setCursor(0, 1);
       tela.print("recebido");
-
-      delay(3000);
-
+      
+      delay(3000);  // Tempo para visualizar a mensagem
+      
       tela.clear();
       tela.setCursor(0, 0);
       tela.print("Aproxime o");
