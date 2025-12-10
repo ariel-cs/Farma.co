@@ -14,12 +14,12 @@ Projeto 1 - Dentro do eixo ambiental nosso projeto tem objetivo de encontrar uma
 ---
 
 ## 📖 Problemática
-Dentro do eixo ambiental nosso grupo se interessou por resolver o problema do descarte inadequado de medicamentos que afeta diretamente as pessoas em situação de rua e quem mora proximo a lixões devido a possibilidade de entrarem em contato e até no caso de crianças ingerirem um medicamento tarja preta ou que possa causar alergia no individuo. Além disso a contaminação indireta com esses farmacos sendo discartados em rios e lagoas que acabam por contaminar a água os peixes e a vegetação local.
+Dentro do eixo ambiental nosso grupo se interessou por resolver o problema do descarte inadequado de medicamentos que afeta diretamente as pessoas em situação de rua e quem mora próximo a lixões devido a possibilidade de entrarem em contato e até no caso de crianças ingerirem um medicamento tarja preta ou que possa causar alergia no indivíduo. Além disso a contaminação indireta com esses fármacos sendo descartados em rios e lagoas que acabam por contaminar a água, os peixes e a vegetação local.
 
 ---
 
 ## ✨ Propósito
-Nas farmácias ja existe um local destinado ao descarte de medicamentos, porém esse lugar não possue nenhum incentivo ao descarte o que acarreta uma falta de interesse por parte da população em ir a uma farmácia descartar seus medicamentos que caíram em desuso. Com isso em mente o nosso projeto visa resolver esse problema devolvendo um valor ao usuário por estar prestando esse serviço.
+Nas farmácias já existe um local destinado ao descarte de medicamentos, porém esse lugar não possui nenhum incentivo ao descarte, o que acarreta uma falta de interesse por parte da população em ir a uma farmácia descartar seus medicamentos que caíram em desuso. Com isso em mente o nosso projeto visa resolver esse problema devolvendo um valor ao usuário por estar prestando esse serviço.
 
 ---
 
@@ -30,28 +30,24 @@ Nas farmácias ja existe um local destinado ao descarte de medicamentos, porém 
 - silicone
 - Cola tekbond
 - Arduino UNO
-- 2 servo motores
+- 2 servos motores
 - mini protoboard
 - teclado 4x4
 - tela LSD
 - Sensor MH-ET LIVE V3
-- tinta acrlica Branca, Verde, Azul e Preta
+- tinta acrílica Branca, Verde, Azul e Preta
 - fita isolante
 ---
 
-## 📚 Código
-
----
-
 ## Instalação
-ligar o usb do SENSOR e do ARDUINO numa fonte de energia
+- ligar o usb do SENSOR e do ARDUINO numa fonte de energia
 ---
 
 ## 🚀 Como usar
 
 ### Passo 1: CPF
 digite o seu cpf na máquina
-se o cpf ja estiver cadastrado na farmácia ele irá te conceder acesso para depositar o medicamento
+se o cpf já estiver cadastrado na farmácia ele irá te conceder acesso para depositar o medicamento
 
 ### Passo 2: Remédio
 aproxime o medicamento do leitor na direita
