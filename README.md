@@ -76,4 +76,3 @@ fios ligados A4 e A5:
 A4-Vermelho A5-Vermelho
 GND - Preto
 5V - Vermelho
-
